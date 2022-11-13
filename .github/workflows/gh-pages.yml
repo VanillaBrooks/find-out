@@ -19,7 +19,7 @@ jobs:
       - name: install dependencies
         run: |
           pip3 install bokeh
-      - name: build output.json structure
+      - name: build graph with bokeh
         run: |
           python3 ./src/main.py find_out.csv src/index.html
       - name: Deploy
