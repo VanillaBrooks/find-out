@@ -55,7 +55,7 @@ TOOLTIPS = [
 CIRCLE_SIZE = 15
 
 # create a figure with a 16x9 aspect ratio
-p = figure(width=160, height=90, x_range=(0, 10), y_range=(0, 10), tooltips=TOOLTIPS)
+p = figure(width=160, height=90, x_range=(0, 10), y_range=(0, 10), tooltips=TOOLTIPS, title="How to Find Out")
 
 data = load_csv_data(source_file)
 source = ColumnDataSource(data=data)
@@ -73,4 +73,4 @@ p.circle(x="x_values", y="y_values", source=source, size=CIRCLE_SIZE)
 
 # save the output
 output_file(save_path)
-save(p)
+save(p, title="Find Out")
